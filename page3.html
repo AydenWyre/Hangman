@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset=utf-8>
+                <title>Hangman</title>
+                <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+                <div class="navbar">
+                        <a href="http://www.ecst.csuchico.edu/~awyre/page1.html"><b>Home</b></a>
+                        <a href="http://www.ecst.csuchico.edu/~awyre/page2.html"><b>Covers</b></a>
+                        <a href="http://www.ecst.csuchico.edu/~awyre/page3.html"><b>Hangman</b></a>
+                        <div class="dropdown3">
+                                <button class="dropbtn3"><b>Jump to Year</b>
+                                        <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content3">
+                                        <a href="#1990">1990</a>
+                                        <a href="#1991">1991</a>
+                                        <a href="#1992">1992</a>
+                                        <a href="#1993">1993</a>
+                                        <a href="#1994">1994</a>
+                                        <a href="#1995">1995</a>
+                                        <a href="#1996">1996</a>
+                                        <a href="#1997">1997</a>
+                                        <a href="#1998">1998</a>
+                                        <a href="#1999">1999</a>
+                                        <a href="#2000">2000</a>
+                                        <a href="#2001">2001</a>
+                                        <a href="#2002">2002</a>
+                                        <a href="#2003">2003</a>
+                                        <a href="#2004">2004</a>
+                                        <a href="#2005">2005</a>
+                                        <a href="#2006">2006</a>
+                                        <a href="#2007">2007</a>
+                                        <a href="#2008">2008</a>
+                                        <a href="#2009">2009</a>
+                                        <a href="#2010">2010</a>
+                                        <a href="#2011">2011</a>
+                                        <a href="#2012">2012</a>
+                                        <a href="#2013">2013</a>
+                                        <a href="#2014">2014</a>
+                                        <a href="#2015">2015</a>
+                                        <a href="#2016">2016</a>
+                                        <a href="#2017">2017</a>
+                                        <a href="#2018">2018</a>
+                                </div>
+                        </div>
+
+                </div>
+                <center>
+                        <BR>
+                        <BR>
+                        <BR>
+                        <div class="box">
+                                <!--<img src="youLose.png" id="youLose" style="display:none;"/>-->
+                                <BR>
+                                <table id = "t02">
+                                        <tr>
+                                                <td id= "hmCell">
+                                                        <center>
+                                                        <img src="Rusty8.png" id="Rusty7"/> 
+                                                        <img src="Rusty6.png" id="Rusty6"/>
+                                                        <img src="Rusty5.png" id="Rusty5"/>
+                                                        <img src="Rusty4.png" id="Rusty4"/>
+                                                        <img src="Rusty3.png" id="Rusty3"/>
+                                                        <img src="Rusty2.png" id="Rusty2"/>
+                                                        <img src="Rusty1.png" id="Rusty1"/>
+                                                        </center>
+                                                </td>
+                                                <td>
+                                <h1 class ="coverh1">Hangman</h1>
+                                <h2 id = "word"></h2>
+                                                        <b> Guess a Letter:</b>
+                                                        <BR>
+                                                        <BR>
+                                                        <button id="AButton" onclick="guessLetter('A')">A</button>
+                                                        <button id="BButton"onclick="guessLetter('B')">B</button>
+                                                        <button id="CButton"onclick="guessLetter('C')">C</button>
+                                                        <button id="DButton"onclick="guessLetter('D')">D</button>
+                                                        <button id="EButton"onclick="guessLetter('E')">E</button>
+                                                        <button id="FButton"onclick="guessLetter('F')">F</button>
+                                                        <button id="GButton"onclick="guessLetter('G')">G</button>
+                                                        <button id="HButton"onclick="guessLetter('H')">H</button>
+                                                        <button id="IButton"onclick="guessLetter('I')">I</button>
+                                                        <button id="JButton"onclick="guessLetter('J')">J</button>
+                                                        <button id="KButton"onclick="guessLetter('K')">K</button>
+                                                        <button id="LButton"onclick="guessLetter('L')">L</button>
+                                                        <button id="MButton"onclick="guessLetter('M')">M</button>
+                                                        <button id="NButton"onclick="guessLetter('N')">N</button>
+                                                        <button id="OButton"onclick="guessLetter('O')">O</button>
+                                                        <button id="PButton"onclick="guessLetter('P')">P</button>
+                                                        <button id="QButton"onclick="guessLetter('Q')">Q</button>
+                                                        <button id="RButton"onclick="guessLetter('R')">R</button>
+                                                        <button id="SButton"onclick="guessLetter('S')">S</button>
+                                                        <button id="TButton"onclick="guessLetter('T')">T</button>
+                                                        <button id="UButton"onclick="guessLetter('U')">U</button>
+                                                        <button id="VButton"onclick="guessLetter('V')">V</button>
+                                                        <button id="WButton"onclick="guessLetter('W')">W</button>
+                                                        <button id="XButton"onclick="guessLetter('X')">X</button>
+                                                        <button id="YButton"onclick="guessLetter('Y')">Y</button>
+                                                        <button id="ZButton"onclick="guessLetter('Z')">Z</button>
+                                                        <BR>
+                                                        <BR>
+                                                        <BR>
+                                                        <BR>
+                                                        <BR>
+                                                        <BR>
+                                                        <body onload = "startGame();"></body>
+                                                        <button onclick="guessWord();">Guess Word</button>
+                                                        <button onclick="newGame()">New Game</button>
+                                                </td>
+                                        </tr>
+                                </table>
+
+                        </div>
+                        <BR>
+                        <BR>
+                        <BR>
+                        <BR>
+                </center>
+         <script src="hangman.js">
+         </script>
+        </body>
+</html>
